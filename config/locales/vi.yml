@@ -1,0 +1,23 @@
+vi:
+  pages:
+    home:
+      title: "Trang chủ"
+      heading: "Ứng dụng mẫu"
+      content_html: "Đây là trang chủ cho ứng dụng mẫu của %{tutorial_link}."
+      links:
+        tutorial: "Hướng dẫn Ruby on Rails"
+    help:
+      title: "Trợ giúp"
+      heading: "Trợ giúp"
+      content_html: "Nhận sự trợ giúp cho Ruby on Rails tại %{help_link}.
+                    Để có thể nhận sự trợ giúp, hãy xem %{book_link}"
+      links:
+        help: "Trang trợ giúp về hướng dẫn Rails"
+        book_html: "Sách <em>Hướng dẫn Ruby on Rails</em>"
+  navbar:
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    login: "Đăng nhập"
+  title:
+    header_title: "Ứng dụng mẫu"
+    base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
