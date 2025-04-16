@@ -3,6 +3,11 @@ defaults: &defaults
   book_url: "http://www.railstutorial.org/book"
   tutorial_url: "http://www.railstutorial.org/"
 
+users:
+  email_validate_regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  name_max_length: 50
+  email_max_length: 255
+
 development:
   <<: *defaults
 
