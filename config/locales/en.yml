@@ -15,6 +15,14 @@ en:
       links:
         help: "Rails Tutorial help page"
         book_html: "<em>Ruby on Rails Tutorial</em> book"
+    signup:
+      title: "Signup"
+      form:
+        confirmation: "Confirmation"
+        create_acc: "Create my account"
+        contain: "This form contains"
+        error: "error"
+        success: "User created successfully"
   navbar:
     home: "Home"
     help: "Help"
