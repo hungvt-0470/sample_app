@@ -1,4 +1,12 @@
 vi:
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật Khẩu"
   pages:
     home:
       title: "Trang chủ"
@@ -14,6 +22,14 @@ vi:
       links:
         help: "Trang trợ giúp về hướng dẫn Rails"
         book_html: "Sách <em>Hướng dẫn Ruby on Rails</em>"
+    signup:
+      title: "Đăng ký"
+      form:
+        confirmation: "Xác nhận mật khẩu"
+        create_acc: "Tạo tài khoản"
+        contain: "Form này đang chứa"
+        error: "lỗi"
+        success: "Tạo tài khoản thành công"
   navbar:
     home: "Trang chủ"
     help: "Trợ giúp"
