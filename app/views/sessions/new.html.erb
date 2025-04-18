@@ -1,0 +1,17 @@
+<% provide :title, t("pages.login.title") %>
+
+<h1><%= t "pages.login.title" %></h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset">
+    <%= form_for :session, url: login_path do |f| %>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control" %>
+      <%= f.submit t("pages.login.form.submit"), class: "btn btn-primary" %>
+    <% end %>
+    <p>
+      <%= t "pages.login.form.new" %><%= link_to t("pages.signup.title"), signup_path %>
+    </p>
+  </div>
+</div>
