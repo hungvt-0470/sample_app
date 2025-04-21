@@ -23,10 +23,21 @@ en:
         contain: "This form contains"
         error: "error"
         success: "User created successfully"
+    login:
+      title: "Login"
+      form:
+        submit: "Login"
+        new: "New user?"
+        invalid: "Invalid email or password! Please try again or signup"
   navbar:
     home: "Home"
     help: "Help"
     login: "Log in"
+    account:
+      main: "Account"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
   title:
     header_title: "Sample App"
     base_title: "Ruby on Rails Tutorial Sample App"

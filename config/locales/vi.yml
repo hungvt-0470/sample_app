@@ -7,6 +7,11 @@ vi:
         name: "Tên"
         email: "Email"
         password: "Mật Khẩu"
+  helpers:
+    label:
+      session:
+        email: "Email"
+        password: "Mật khẩu"
   pages:
     home:
       title: "Trang chủ"
@@ -30,10 +35,21 @@ vi:
         contain: "Form này đang chứa"
         error: "lỗi"
         success: "Tạo tài khoản thành công"
+    login:
+      title: "Đăng nhập"
+      form:
+        submit: "Đăng nhập"
+        new: "Bạn là người mới?"
+        invalid: "Email hoặc mật khẩu sai! Hãy thử lại hoặc đăng ký!"
   navbar:
     home: "Trang chủ"
     help: "Trợ giúp"
     login: "Đăng nhập"
+    account:
+      main: "Tài khoản"
+      profile: "Hồ sơ cá nhân"
+      setting: "Cài đặt"
+      logout: "Đăng xuất"
   title:
     header_title: "Ứng dụng mẫu"
     base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"

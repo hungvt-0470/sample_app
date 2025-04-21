@@ -107,3 +107,7 @@ input {
     color: $state-danger-text
   }
 }
+
+.dropdown-menu.active {
+  display: block;
+}
