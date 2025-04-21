@@ -4,9 +4,10 @@ defaults: &defaults
   tutorial_url: "http://www.railstutorial.org/"
 
 users:
-  email_validate_regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  email_validate_regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
   name_max_length: 50
   email_max_length: 255
+  gravatar_url_heading: "https://secure.gravatar.com/avatar/"
 
 development:
   <<: *defaults
