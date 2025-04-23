@@ -29,6 +29,7 @@ en:
         submit: "Login"
         new: "New user?"
         invalid: "Invalid email or password! Please try again or signup"
+        remember: "Remember me on this computer"
   navbar:
     home: "Home"
     help: "Help"

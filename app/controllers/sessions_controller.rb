@@ -1,5 +1,9 @@
 class SessionsController < ApplicationController
-  LOGIN_PARAMS = [:email, :password].freeze
+  LOGIN_PARAMS = [
+    :email,
+    :password,
+    :remember_me
+  ].freeze
 
   def new; end
 
@@ -8,6 +12,7 @@ class SessionsController < ApplicationController
 
     if user&.authenticate login_params[:password]
       log_in user
+      login_params[:remember_me] == "1" ? remember(user) : forget(user)
       redirect_to user
     else
       flash.now[:danger] = t "pages.login.form.invalid"
@@ -21,6 +26,7 @@ class SessionsController < ApplicationController
   end
 
   private
+
   def login_params
     params.require(:session).permit(LOGIN_PARAMS)
   end
