@@ -41,6 +41,7 @@ vi:
         submit: "Đăng nhập"
         new: "Bạn là người mới?"
         invalid: "Email hoặc mật khẩu sai! Hãy thử lại hoặc đăng ký!"
+        remember: "Lưu thông tin đăng nhập"
   navbar:
     home: "Trang chủ"
     help: "Trợ giúp"
