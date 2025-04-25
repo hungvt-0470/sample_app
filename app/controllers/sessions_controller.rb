@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
     if user&.authenticate login_params[:password]
       log_in user
       login_params[:remember_me] == "1" ? remember(user) : forget(user)
-      redirect_to user
+      redirect_back_or user
     else
       flash.now[:danger] = t "pages.login.form.invalid"
       render :new, status: :unprocessable_entity

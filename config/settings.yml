@@ -2,12 +2,18 @@ defaults: &defaults
   help_url: "http://www.railstutorial.org/help"
   book_url: "http://www.railstutorial.org/book"
   tutorial_url: "http://www.railstutorial.org/"
+  avatar_change_url: "http://gravatar.com/emails"
 
 users:
   email_validate_regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
   name_max_length: 50
   email_max_length: 255
-  gravatar_url_heading: "https://secure.gravatar.com/avatar/"
+  password_min_length: 6
+  gravatar:
+    heading: "https://secure.gravatar.com/avatar/"
+    default_size: 80
+    display_size: 50
+  page: 10
 
 development:
   <<: *defaults

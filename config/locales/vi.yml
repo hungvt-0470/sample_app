@@ -42,10 +42,29 @@ vi:
         new: "Bạn là người mới?"
         invalid: "Email hoặc mật khẩu sai! Hãy thử lại hoặc đăng ký!"
         remember: "Lưu thông tin đăng nhập"
+    edit:
+      title: "Chỉnh sửa thông tin"
+      heading: "Chỉnh sủa thông tin của bạn"
+      not_found: "Không tìm thấy người dùng!"
+      submit: "Lưu thay đổi"
+      link: "Thay đổi"
+      success: "Cập nhật thành công!"
+    errors:
+      not_log_in: "Hãy đăng nhập để  tiếp tục!"
+      not_user: "Bạn không thể chỉnh sửa tài khoản này!"
+    users:
+      title: "Danh sách người dùng"
+    admin:
+      destroy:
+        text: "Xóa"
+        confirm: "Bạn chắc chắc muốn xóa không?"
+        success: "Xóa người dùng thành công!"
+        fail: "Xóa người dùng thất bại!"
   navbar:
     home: "Trang chủ"
     help: "Trợ giúp"
     login: "Đăng nhập"
+    users: "Danh sách người dùng"
     account:
       main: "Tài khoản"
       profile: "Hồ sơ cá nhân"
