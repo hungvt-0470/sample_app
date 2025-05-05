@@ -30,10 +30,29 @@ en:
         new: "New user?"
         invalid: "Invalid email or password! Please try again or signup"
         remember: "Remember me on this computer"
+    edit:
+      title: "Edit user"
+      heading: "Update your profile"
+      not_found: "Not found user!"
+      submit: "Save changes"
+      link: "Change"
+      success: "Profile updated!"
+    errors:
+      not_log_in: "Please log in!"
+      not_user: "You cannot edit this account!"
+    users:
+      title: "All users"
+    admin:
+      destroy:
+        text: "Delete"
+        confirm: "You sure?"
+        success: "User deleted!"
+        fail: "Delete fail!"
   navbar:
     home: "Home"
     help: "Help"
     login: "Log in"
+    users: "Users"
     account:
       main: "Account"
       profile: "Profile"

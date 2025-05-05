@@ -6,6 +6,7 @@
           <li><%= link_to t("navbar.home"), "#" %></li>
           <li><%= link_to t("navbar.help"), "#" %></li>
           <% if logged_in? %>
+            <li><%= link_to t("navbar.users"), users_path %></li>
             <li class="dropdown">
               <%= link_to "#", id: "account",
                               class: "dropdown-toggle",
@@ -16,7 +17,10 @@
               <% end %>
               <ul id="dropdown-menu" class="dropdown-menu">
                 <li><%= link_to t("navbar.account.profile"), current_user %></li>
-                <li><%= link_to t("navbar.account.setting"), "#" %></li>
+                <li>
+                  <%= link_to t("navbar.account.setting"),
+                              edit_user_path(current_user) %>
+                </li>
                 <li class="divider"></li>
                 <li>
                   <%= link_to t("navbar.account.logout"),

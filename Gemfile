@@ -33,6 +33,10 @@ gem "rails-i18n"
 
 gem "bcrypt", "3.1.13"
 
+gem "faker", "2.21.0"
+
+gem "pagy"
+
 group :development, :test do
   gem "debug", platforms: %i(mri mingw x64_mingw)
   gem "rubocop", "~> 1.26", require: false
