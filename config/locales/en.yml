@@ -58,6 +58,15 @@ en:
       profile: "Profile"
       setting: "Settings"
       logout: "Log out"
+  mailer:
+    subject: "Account activation"
+    heading: "Hi %{username}"
+    content: "Welcome to the SampleApp! Click on the link below to activate your account:"
+    activate: "Activate"
+    info: "Please check your email to activate your account."
+    success: "Account activated!"
+    fail: "Invalid activation link"
+    warning: "Account not activated. Check your mail for the activation."
   title:
     header_title: "Sample App"
     base_title: "Ruby on Rails Tutorial Sample App"

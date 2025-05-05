@@ -37,6 +37,8 @@ gem "faker", "2.21.0"
 
 gem "pagy"
 
+gem "figaro"
+
 group :development, :test do
   gem "debug", platforms: %i(mri mingw x64_mingw)
   gem "rubocop", "~> 1.26", require: false
