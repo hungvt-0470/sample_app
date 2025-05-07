@@ -13,6 +13,8 @@ class User < ApplicationRecord
     :password_confirmation
   ].freeze
 
+  has_many :microposts, dependent: :destroy
+
   before_save :downcase_email
   before_create :create_activation_digest
 
@@ -41,6 +43,10 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  def feed
+    microposts
   end
 
   def password_reset_expired?

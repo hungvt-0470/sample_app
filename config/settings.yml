@@ -6,6 +6,10 @@ defaults: &defaults
   host: "localhost:3000"
 
 expire_time: 2
+resize_to_limit:
+  - 500
+  - 500
+max_size: 5
 
 users:
   email_validate_regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
@@ -17,6 +21,14 @@ users:
     default_size: 80
     display_size: 50
   page: 10
+
+microposts:
+  content_max_size: 140
+  allowed_image_mime_types:
+    - image/jpeg
+    - image/gif
+    - image/png
+  accept_image: "image/jpeg,image/gif,image/png"
 
 development:
   <<: *defaults
