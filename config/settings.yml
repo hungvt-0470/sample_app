@@ -3,6 +3,7 @@ defaults: &defaults
   book_url: "http://www.railstutorial.org/book"
   tutorial_url: "http://www.railstutorial.org/"
   avatar_change_url: "http://gravatar.com/emails"
+  host: "localhost:3000"
 
 users:
   email_validate_regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z

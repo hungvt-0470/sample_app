@@ -8,12 +8,9 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = User.find_by email: login_params[:email]&.downcase
-
-    if user&.authenticate login_params[:password]
-      log_in user
-      login_params[:remember_me] == "1" ? remember(user) : forget(user)
-      redirect_back_or user
+    user = User.find_by email: login_params[:email].downcase
+    if user&.authenticate(login_params[:password])
+      check_activate user
     else
       flash.now[:danger] = t "pages.login.form.invalid"
       render :new, status: :unprocessable_entity
@@ -29,5 +26,16 @@ class SessionsController < ApplicationController
 
   def login_params
     params.require(:session).permit(LOGIN_PARAMS)
+  end
+
+  def check_activate user
+    if user.activated
+      log_in user
+      login_params[:remember_me] == "1" ? remember(user) : forget(user)
+      redirect_back_or user
+    else
+      flash[:warning] = t("mailer.warning")
+      redirect_to root_url
+    end
   end
 end

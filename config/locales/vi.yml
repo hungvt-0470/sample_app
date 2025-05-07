@@ -70,6 +70,15 @@ vi:
       profile: "Hồ sơ cá nhân"
       setting: "Cài đặt"
       logout: "Đăng xuất"
+  mailer:
+    subject: "Kích hoạt tài khoản"
+    heading: "Xin chào %{username}"
+    content: "Chào mừng đến với SampleApp! Truy cập vào đường dẫn bên dưới để kích hoạt tài khoản:"
+    activate: "Kích hoạt"
+    info: "Hãy kiểm tra email của bạn để kích hoạt tài khoản."
+    sucess: "Kích hoạt tài khoản thành công."
+    fail: "ĐƯờng dẫn kích hoạt tài khoản không hợp lệ."
+    warning: "Tài khoản chưa được kích hoạt. Hãy kiểm tra email của bạn để kích hoạt."
   title:
     header_title: "Ứng dụng mẫu"
     base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
