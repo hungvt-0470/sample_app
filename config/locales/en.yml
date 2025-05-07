@@ -30,6 +30,7 @@ en:
         new: "New user?"
         invalid: "Invalid email or password! Please try again or signup"
         remember: "Remember me on this computer"
+        forgot: "Forgot password"
     edit:
       title: "Edit user"
       heading: "Update your profile"
@@ -48,6 +49,13 @@ en:
         confirm: "You sure?"
         success: "User deleted!"
         fail: "Delete fail!"
+    pw_reset:
+      title: "Reset password"
+      confirmation: "confirmation"
+      submit: "Update password"
+    forgot_pw:
+      title: "Forgot password"
+      submit: "Submit"
   navbar:
     home: "Home"
     help: "Help"
@@ -60,6 +68,20 @@ en:
       logout: "Log out"
   mailer:
     subject: "Account activation"
+    pw_reset:
+      subject: "Password Reset"
+      heading: "To reset your password click the link below:"
+      content_1: "This link will expire in two hours"
+      content_2: "If you did not request your password to be reset,
+                  please ignore this email and your password will stay as it is"
+      link: "Reset password"
+      info: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+      user_not_found: "User not found"
+      user_not_active: "User is in_actived!"
+      error: "invalid"
+      success: "Reset password successfully"
+      expire: "Password reset has expired"
     heading: "Hi %{username}"
     content: "Welcome to the SampleApp! Click on the link below to activate your account:"
     activate: "Activate"

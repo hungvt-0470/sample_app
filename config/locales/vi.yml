@@ -42,6 +42,7 @@ vi:
         new: "Bạn là người mới?"
         invalid: "Email hoặc mật khẩu sai! Hãy thử lại hoặc đăng ký!"
         remember: "Lưu thông tin đăng nhập"
+        forgot: "Quên mật khẩu"
     edit:
       title: "Chỉnh sửa thông tin"
       heading: "Chỉnh sủa thông tin của bạn"
@@ -60,6 +61,13 @@ vi:
         confirm: "Bạn chắc chắc muốn xóa không?"
         success: "Xóa người dùng thành công!"
         fail: "Xóa người dùng thất bại!"
+    pw_reset:
+      title: "Đặt lại mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      submit: "Đổi mật khẩu"
+    forgot_pw:
+      title: "Quên mật khẩu"
+      submit: "Xác nhận"
   navbar:
     home: "Trang chủ"
     help: "Trợ giúp"
@@ -72,11 +80,24 @@ vi:
       logout: "Đăng xuất"
   mailer:
     subject: "Kích hoạt tài khoản"
+    pw_reset:
+      subject: "Đổi mật khẩu"
+      heading: "Để đổi mật khẩu hãy truy cập vào đường link bên dưới"
+      content_1: "Đường dẫn này sẽ hết hạn trong 2 giờ tới."
+      content_2: "Nếu bạn không yêu cầu đổi mật khẩu thì không cần quan tâm tới email này"
+      link: "Đổi mật khẩu"
+      info: "Email đã được gửi kèm theo hướng dẫn."
+      email_not_found: "Không tìm thấy địa chỉ email"
+      user_not_found: "Không tìm thấy người dùng"
+      user_not_active: "Tài khoản người dùng chưa được kích hoạt."
+      error: "không hợp lệ"
+      success: "Đổi mật khẩu thành công."
+      expire: "Đã hết hạn đổi mật khẩu."
     heading: "Xin chào %{username}"
     content: "Chào mừng đến với SampleApp! Truy cập vào đường dẫn bên dưới để kích hoạt tài khoản:"
     activate: "Kích hoạt"
     info: "Hãy kiểm tra email của bạn để kích hoạt tài khoản."
-    sucess: "Kích hoạt tài khoản thành công."
+    success: "Kích hoạt tài khoản thành công."
     fail: "ĐƯờng dẫn kích hoạt tài khoản không hợp lệ."
     warning: "Tài khoản chưa được kích hoạt. Hãy kiểm tra email của bạn để kích hoạt."
   title:
