@@ -85,6 +85,14 @@ en:
       profile: "Profile"
       setting: "Settings"
       logout: "Log out"
+  following:
+    title: "Following"
+    text: "following"
+  follower:
+    title: "Followers"
+    text: "followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
   mailer:
     subject: "Account activation"
     pw_reset:

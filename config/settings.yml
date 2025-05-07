@@ -20,6 +20,7 @@ users:
     heading: "https://secure.gravatar.com/avatar/"
     default_size: 80
     display_size: 50
+    follow_size: 30
   page: 10
 
 microposts:

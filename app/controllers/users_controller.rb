@@ -4,6 +4,18 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
+  def following
+    @title = t("following.title")
+    @pagy, @users = pagy @user.following
+    render :show_follow
+  end
+
+  def followers
+    @title = t("follower.title")
+    @pagy, @users = pagy @user.followers
+    render :show_follow
+  end
+
   def index
     @pagy, @users = pagy User.all
   end

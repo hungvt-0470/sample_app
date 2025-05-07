@@ -97,6 +97,14 @@ vi:
       profile: "Hồ sơ cá nhân"
       setting: "Cài đặt"
       logout: "Đăng xuất"
+  following:
+    title: "Đang theo dõi"
+    text: "đang theo dõi"
+  follower:
+    title: "Người theo dõi"
+    text: "người theo dõi"
+  follow: "Theo dõi"
+  unfollow: "Hủy theo dõi"
   mailer:
     subject: "Kích hoạt tài khoản"
     pw_reset:
