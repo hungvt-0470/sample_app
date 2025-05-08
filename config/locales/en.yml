@@ -43,6 +43,7 @@ en:
       not_user: "You cannot edit this account!"
     users:
       title: "All users"
+      view_link: "view my profile"
     admin:
       destroy:
         text: "Delete"
@@ -56,6 +57,24 @@ en:
     forgot_pw:
       title: "Forgot password"
       submit: "Submit"
+    micropost:
+      feed: "Micropost Feed"
+      plural: "Microposts"
+      text: "micropost"
+      content: "Posted %{time} ago."
+      destroy:
+        text: "Delete"
+        confirm: "You sure?"
+      placeholder: "Compose new micropost..."
+      post: "Post"
+  micropost:
+    created: "Micropost created!"
+    delete_success: "Micropost deleted"
+    delete_fail: "Deleted fail"
+    delete_invalid: "Micropost invalid"
+    image_alert: "Maximum file size is 5MB. Please choose a smaller file."
+    img_type_msg: "must be a valid image format"
+    img_size_msg: "should be less than 5MB"
   navbar:
     home: "Home"
     help: "Help"

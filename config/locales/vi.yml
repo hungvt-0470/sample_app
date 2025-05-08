@@ -55,6 +55,7 @@ vi:
       not_user: "Bạn không thể chỉnh sửa tài khoản này!"
     users:
       title: "Danh sách người dùng"
+      view_link: "Xem trang cá nhân"
     admin:
       destroy:
         text: "Xóa"
@@ -68,6 +69,24 @@ vi:
     forgot_pw:
       title: "Quên mật khẩu"
       submit: "Xác nhận"
+    micropost:
+      feed: "Danh sách bài viết"
+      plural: "Các bài viết"
+      text: "bài viết"
+      content: "Đăng vào %{time} trước."
+      destroy:
+        text: "Xóa"
+        confirm: "Bạn chắc không?"
+      placeholder: "Đăng bài viết mới..."
+      post: "Đăng"
+  micropost:
+    created: "Tạo bài viết thành công!"
+    delete_success: "Xóa bài viết thành công"
+    delete_fail: "Xóa không thành công"
+    delete_invalid: "Bài viết không hợp lệ"
+    image_alert: "Kích cỡ tối đa là 5MB. Hãy chọn file kích cỡ bé hơn."
+    img_type_msg: "phải đúng loại ảnh"
+    img_size_msg: "cần phải bé hơn hoặc bằng 5MB"
   navbar:
     home: "Trang chủ"
     help: "Trợ giúp"

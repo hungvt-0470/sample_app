@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @pagy, @users = pagy User.all
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts
+  end
 
   def new
     @user = User.new
@@ -56,16 +58,8 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-    flash[:warning] = t "pages.edit.not_found"
+    flash[:warning] = t("pages.edit.not_found")
     redirect_to root_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t("pages.errors.not_log_in")
-    redirect_to login_url
   end
 
   def correct_user

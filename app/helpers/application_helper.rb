@@ -22,4 +22,8 @@ module ApplicationHelper
     link_to t("pages.edit.link"), Settings.defaults.avatar_change_url,
             target: :blank
   end
+
+  def time obj
+    time_ago_in_words obj.created_at
+  end
 end
