@@ -3,7 +3,7 @@ module UsersHelper
     options = {size: Settings.users.gravatar.default_size}
     gravatar_id = Digest::MD5.hexdigest user.email.downcase
     size = options[:size]
-    gravatar_url = "#{Settings.users.gravatar.heading}#{gravatar_id}?s=##{size}"
+    gravatar_url = "#{Settings.users.gravatar.heading}#{gravatar_id}?s=#{size}"
     image_tag gravatar_url, alt: user.name, class: "gravatar"
   end
 

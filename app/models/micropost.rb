@@ -7,7 +7,7 @@ class Micropost < ApplicationRecord
   belongs_to :user
   has_one_attached :image do |attachable|
     attachable.variant :display,
-                      resize_to_limit: Settings.resize_to_limit
+                       resize_to_limit: Settings.resize_to_limit
   end
 
   validates :content, presence: true,
@@ -20,4 +20,5 @@ length: {maximum: Settings.microposts.content_max_size}
                            message: :"micropost.img_size_msg"}
 
   scope :newest, ->{order(created_at: :desc)}
+  scope :relate_post, ->(user_ids){where user_id: user_ids}
 end
